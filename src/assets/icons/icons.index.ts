@@ -10,4 +10,5 @@ export { default as IC_Volunteer } from "./ic_volunteer.svg";
 export { default as IC_Community } from "./ic_commnuity.svg";
 export { default as IC_Handshake } from "./ic_handshake.svg";
 export { default as IC_Hamburger } from "./ic_hamburger.svg";
+export { default as IC_Play } from "./ic_play.svg";
 // export { default as } from './'

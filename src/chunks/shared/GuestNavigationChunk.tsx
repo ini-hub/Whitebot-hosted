@@ -69,9 +69,9 @@ export default function GuestNavigationChunk() {
     useGuestNavigationChunk();
   return (
     <header className="bg-white drop-shadow-xl py-4">
-      <div className="w-11/12 max-w-screen-2xl mx-auto flex items-center justify-between gap-10">
+      <div className="w-11/12 max-w-screen-xl mx-auto flex items-center justify-between gap-10">
         <nav className="flex items-center flex-grow gap-20">
-          <img src={IM_CompanyLogo.default} className="h-[30px]" />
+          <img src={IM_CompanyLogo} className="h-[30px]" />
           <ul className="items-center gap-8 hidden lg:flex">
             {navigation.map((item, i) => (
               <li

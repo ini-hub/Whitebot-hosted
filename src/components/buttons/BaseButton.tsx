@@ -9,7 +9,7 @@ export default function BaseButton(props: BaseButtonProps) {
   const { ...buttonProps } = props;
   return (
     <button
-      className="text-sm text-white bg-app-purple rounded-full py-2 px-8 font-medium"
+      className="text-xs text-white bg-app-purple rounded-full py-2.5 px-6 font-medium"
       {...buttonProps}
     />
   );
