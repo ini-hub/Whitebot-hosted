@@ -5,3 +5,7 @@ export { default as IM_HeroVideoThumbnail } from "./im_hero-video-thumbnail.svg"
 export { default as IM_HeroLogoIllustrationLeft } from "./im_hero-logo-illutration-left.svg";
 export { default as IM_HeroLogoIllustrationRight } from "./im_hero-logo-illutration-right.svg";
 export { default as IM_BackgroundSkin } from "./im_background-skin.svg";
+export { default as IM_AffordabilityIllustration } from "./im_affordability-illustration.svg";
+export { default as IM_ImmobilityIllustration } from "./im_immobility-illustration.svg";
+export { default as IM_InsecurityIllustration } from "./im_insecurity-illustration.svg";
+export { default as IM_StigmatizationIllustration } from "./im_stigmatization-illustration.svg";

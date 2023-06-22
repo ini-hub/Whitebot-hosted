@@ -49,6 +49,7 @@ export default function HeroChunk() {
             </div>
           </div>
         </div>
+
         <div className="relative">
           <div className="bg-black bg-opacity-40 inset-0 m-auto absolute grid place-items-center rounded-xl">
             <img
