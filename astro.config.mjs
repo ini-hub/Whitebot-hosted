@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   server: {
     host: "0.0.0.0",
-    port: process.env.PORT || 6701,
+    port: parseInt(process.env.PORT || "6701"),
   },
   integrations: [react(), tailwind()],
 });
