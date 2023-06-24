@@ -9,3 +9,5 @@ export { default as IM_AffordabilityIllustration } from "./im_affordability-illu
 export { default as IM_ImmobilityIllustration } from "./im_immobility-illustration.svg";
 export { default as IM_InsecurityIllustration } from "./im_insecurity-illustration.svg";
 export { default as IM_StigmatizationIllustration } from "./im_stigmatization-illustration.svg";
+export { default as IM_GoalsDesktopIllustration } from "./im_goals-desktop-illustration.svg";
+export { default as IM_GoalsMobileIllustration } from "./im_goals-mobile-illustration.svg";
