@@ -72,14 +72,19 @@ export default function IssuesChunk() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-5 mt-14">
+          <div className="grid sm:grid-cols-2 gap-5 md:gap-10 mt-14">
             {targetedIssues.map((iss) => (
-              <div key={iss.name} className="bg-white rounded-lg py-8 px-5">
-                <img src={iss.image} className="h-[40px]" />
+              <div
+                key={iss.name}
+                className="bg-white rounded-lg py-8 px-5 md:px-10"
+              >
+                <img src={iss.image} className="h-[50px]" />
                 <h3 className="text-xl mt-4 mb-1 font-semibold text-[#111111]">
                   {iss.name}
                 </h3>
-                <p className="text-xs max-w-xs">{iss.explainerText}</p>
+                <p className="text-xs md:text-sm max-w-sm">
+                  {iss.explainerText}
+                </p>
               </div>
             ))}
           </div>

@@ -14,3 +14,6 @@ export { default as IM_GoalsDesktopIllustration } from "./im_goals-desktop-illus
 export { default as IM_GoalsMobileIllustration } from "./im_goals-mobile-illustration.svg";
 export { default as IM_Binoculars } from "./im_binoculars.svg";
 export { default as IM_MissionTarget } from "./im_mission-target.svg";
+export { default as IM_PartnerIllustration } from "./im_partner-illustration.svg";
+export { default as IM_VolunteerIllustration } from "./im_volunteer-illustration.svg";
+export { default as IM_CommunityIllustration } from "./im_community-illustration.svg";

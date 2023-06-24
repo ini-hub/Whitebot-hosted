@@ -1,7 +1,6 @@
 import {
   IM_BackgroundSkinTwo,
   IM_Binoculars,
-  IM_ImmobilityIllustration,
   IM_MissionTarget,
 } from "../../assets/images/images.index";
 import HighlightedText from "../../components/typography/HighlightedText";
@@ -14,9 +13,9 @@ export default function MissionVisionChunk() {
         className="w-full h-full object-cover absolute inset-0"
       />
       <div className="max-w-screen-xl mx-auto w-11/12">
-        <div className="max-w-max flex items-start gap-10">
-          <img src={IM_MissionTarget} />
-          <div className="">
+        <div className="max-w-max sm:flex items-start gap-10 text-center sm:text-left mx-auto sm:mx-0">
+          <img src={IM_MissionTarget} className="mx-auto" />
+          <div className="mt-10 sm:mt-0">
             <h2 className="text-3xl font-bold">
               Our <HighlightedText> Vision </HighlightedText>
             </h2>
@@ -28,9 +27,9 @@ export default function MissionVisionChunk() {
             </p>
           </div>
         </div>
-        <div className="ml-auto max-w-max flex items-start gap-10 mt-10">
-          <img src={IM_Binoculars} />
-          <div className="">
+        <div className="max-w-max items-start gap-10 mt-20 sm:flex text-center sm:text-left mx-auto sm:mx-0 sm:ml-auto">
+          <img src={IM_Binoculars} className="mx-auto" />
+          <div className="mt-10 sm:mt-0">
             <h2 className="text-3xl font-bold">
               Our <HighlightedText> Vision </HighlightedText>
             </h2>
