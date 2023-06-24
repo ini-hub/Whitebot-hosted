@@ -16,12 +16,12 @@ export default function GoalsChunk() {
           <img
             src={IM_GoalsDesktopIllustration}
             alt=""
-            className="w-full hidden md:block"
+            className="w-full hidden md:block h-[250px] object-left object-contain"
           />
           <img
             src={IM_GoalsMobileIllustration}
             alt=""
-            className="w-full md:hidden"
+            className="w-full md:hidden max-w-[350px] mx-auto"
           />
         </div>
       </div>

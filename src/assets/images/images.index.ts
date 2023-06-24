@@ -17,3 +17,7 @@ export { default as IM_MissionTarget } from "./im_mission-target.svg";
 export { default as IM_PartnerIllustration } from "./im_partner-illustration.svg";
 export { default as IM_VolunteerIllustration } from "./im_volunteer-illustration.svg";
 export { default as IM_CommunityIllustration } from "./im_community-illustration.svg";
+export { default as IM_ProductWhiteBot } from "./im_product-whitebot.png";
+export { default as IM_WhiteBotConnectivityIllustration } from "./im_whitebot-connectivity-illustration.svg";
+export { default as IM_BenefitsIllustration } from "./im_benefits-illustration.svg";
+export { default as IM_BenefitsMobileIllustration } from "./im_benefits-mobile-illustration.svg";
