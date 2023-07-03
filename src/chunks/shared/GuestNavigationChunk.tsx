@@ -68,7 +68,7 @@ export default function GuestNavigationChunk() {
   const { navigation, activeNavigationId, handleMouseEnter, handleMouseOut } =
     useGuestNavigationChunk();
   return (
-    <header className="bg-white drop-shadow-xl py-4">
+    <header className="bg-white drop-shadow-xl py-3 relative z-10">
       <div className="w-11/12 max-w-screen-xl mx-auto flex items-center justify-between gap-10">
         <nav className="flex items-center flex-grow gap-20">
           <img src={IM_CompanyLogo} className="h-[30px]" />
@@ -88,7 +88,7 @@ export default function GuestNavigationChunk() {
                   <img src={IC_ChevronDownDark} className="h-[15px]" />
                 )}
                 {activeNavigationId === item.id && (
-                  <ul className="absolute cursor-default top-full pt-5 shadow-xl bg-white min-w-[200px] px-5 rounded-lg">
+                  <ul className="absolute cursor-default top-full pt-5 shadow-xl bg-white min-w-[200px] px-5 rounded-lg z-50">
                     {item.children?.map((child) => (
                       <li
                         key={child.id}
@@ -114,8 +114,8 @@ export default function GuestNavigationChunk() {
           <div className="flex items-center gap-4">
             <img src={IC_Translate} alt="" className="h-[24px]" />
             <img src={IC_TextToSpeech} alt="" className="h-[24px]" />
-            <img src={IC_FontSizeIncrease} alt="" className="h-[40px]" />
-            <img src={IC_FontSizeDecrease} alt="" className="h-[35px]" />
+            <img src={IC_FontSizeIncrease} alt="" className="h-[45px]" />
+            <img src={IC_FontSizeDecrease} alt="" className="h-[30px]" />
           </div>
           <div className="hidden lg:block">
             <BaseButton onClick={() => console.log("clIKEC")}>FAQ</BaseButton>

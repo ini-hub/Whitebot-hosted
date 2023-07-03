@@ -1,4 +1,5 @@
 import { IC_Play } from "../../assets/icons/icons.index";
+import { useState } from "react";
 import {
   IM_CompanyLogo,
   IM_HeroVideoThumbnail,
@@ -7,7 +8,18 @@ import {
 } from "../../assets/images/images.index";
 import BaseButton from "../../components/buttons/BaseButton";
 
+export function useHeroChunk() {
+  const [isActionPlayVideo, setIsActionPlayVideo] = useState(false);
+
+  function handleTogglePlaybackState() {
+    setIsActionPlayVideo(!isActionPlayVideo);
+  }
+
+  return { isActionPlayVideo, handleTogglePlaybackState };
+}
+
 export default function HeroChunk() {
+  const { handleTogglePlaybackState, isActionPlayVideo } = useHeroChunk();
   return (
     <section className="bg-[#FCF9FF] py-20">
       <div className="max-w-screen-xl w-11/12 mx-auto grid lg:grid-cols-2 gap-10">
@@ -51,16 +63,39 @@ export default function HeroChunk() {
         </div>
 
         <div className="relative">
-          <div className="bg-black bg-opacity-40 inset-0 m-auto absolute grid place-items-center rounded-xl">
+          <div
+            className={`bg-black bg-opacity-40 inset-0 m-auto absolute grid place-items-center rounded-xl z-10 transition-opacity duration-300 ${
+              isActionPlayVideo ? "opacity-0 hover:opacity-100" : ""
+            }`}
+          >
             <img
-              src={IC_Play}
-              className="w-[50px] transform hover:scale-150 cursor-pointer transition-transform"
+              src={
+                !isActionPlayVideo
+                  ? IC_Play
+                  : "https://img.icons8.com/sf-black/64/ffffff/pause.png"
+              }
+              className={`w-[50px] transform hover:scale-150 cursor-pointer transition-transform ${
+                isActionPlayVideo ? "scale-150" : ""
+              }`}
+              onClick={handleTogglePlaybackState}
             />
           </div>
-          <img
-            src={IM_HeroVideoThumbnail}
-            className="w-full h-full object-cover rounded-xl"
-          />
+          {!isActionPlayVideo ? (
+            <img
+              src={IM_HeroVideoThumbnail}
+              className="w-full h-full object-cover rounded-xl"
+            />
+          ) : (
+            <video
+              src={
+                "https://res.cloudinary.com/devtenotea/video/upload/v1688388925/a9ffwyahqqtk83grjchn.mp4"
+              }
+              className="w-full h-full object-cover rounded-xl"
+              autoPlay={isActionPlayVideo}
+              controls={false}
+              onEnded={handleTogglePlaybackState}
+            />
+          )}
         </div>
       </div>
     </section>
