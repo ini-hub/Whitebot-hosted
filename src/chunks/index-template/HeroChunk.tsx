@@ -62,7 +62,7 @@ export default function HeroChunk() {
           </div>
         </div>
 
-        <div className="relative max-h-[500px]">
+        <div className="relative min-h-[270px] max-h-[500px]">
           <div
             className={`bg-black bg-opacity-40 inset-0 m-auto absolute grid place-items-center rounded-xl z-[1] transition-opacity duration-300 ${
               isActionPlayVideo ? "opacity-0 hover:opacity-100" : ""
