@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   IC_ArrowUpCircle,
   IC_Facebook,
@@ -6,7 +7,8 @@ import {
   IC_Youtube,
 } from "../../assets/icons/icons.index";
 import { IM_CompanyLogo } from "../../assets/images/images.index";
-import BaseButton from "../../components/buttons/BaseButton";
+import OurStoryFragment from "../../fragments/index-template/OurStoryFragment";
+import FAQFragment from "../../fragments/index-template/FAQFragment";
 
 function useFooterChunk() {
   const socialMediaLinks = [
@@ -16,24 +18,57 @@ function useFooterChunk() {
     { id: 4, icon: IC_Facebook, link: "https://facebook.com" },
   ];
 
-  return { socialMediaLinks };
+  const [isActionViewOurStory, setIsActionViewOurStory] = useState(false);
+  
+  function handleToggleIsActionViewOurStory() {
+    setIsActionViewOurStory(!isActionViewOurStory);
+  }
+  
+  const [isActionViewFAQ, setIsActionViewFAQ] = useState(false);
+  function handleToggleIsActionViewFAQ() {
+    setIsActionViewFAQ(!isActionViewFAQ);
+  }
+
+  return {
+    socialMediaLinks,
+    isActionViewFAQ,
+    isActionViewOurStory,
+    handleToggleIsActionViewFAQ,
+    handleToggleIsActionViewOurStory,
+  };
 }
 
 export default function FooterChunk() {
-  const { socialMediaLinks } = useFooterChunk();
+  const {
+    socialMediaLinks,
+    handleToggleIsActionViewFAQ,
+    handleToggleIsActionViewOurStory,
+    isActionViewFAQ,
+    isActionViewOurStory,
+  } = useFooterChunk();
   return (
     <footer className="bg-white">
+      {isActionViewOurStory && (
+        <OurStoryFragment onClose={handleToggleIsActionViewOurStory} />
+      )}
+      {isActionViewFAQ && <FAQFragment onClose={handleToggleIsActionViewFAQ} />}
       <div className="max-w-screen-xl mx-auto w-11/12 pt-14 pb-6">
         <div className="grid grid-cols-2 lg:grid-cols-5 mb-8 gap-y-10">
           <div>
             <h5 className="font-semibold text-lg">Company</h5>
             <div className="grid gap-3 mt-3">
-              <a href="" className="text-sm text-gray-500 block max-w-max">
+              <span
+                className="text-sm text-gray-500 block max-w-max"
+                onClick={handleToggleIsActionViewOurStory}
+              >
                 Our Story
-              </a>
-              <a href="" className="text-sm text-gray-500 block max-w-max">
+              </span>
+              <span
+                onClick={handleToggleIsActionViewFAQ}
+                className="text-sm text-gray-500 block max-w-max"
+              >
                 FAQ
-              </a>
+              </span>
               <a href="" className="text-sm text-gray-500 block max-w-max">
                 Careers
               </a>

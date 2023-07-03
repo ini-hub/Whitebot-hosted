@@ -6,6 +6,7 @@ import {
   IC_FontSizeDecrease,
   IC_FontSizeIncrease,
   IC_Gift,
+  IC_HamClose,
   IC_Hamburger,
   IC_Handshake,
   IC_Target,
@@ -15,11 +16,30 @@ import {
 } from "../../assets/icons/icons.index";
 import { IM_CompanyLogo } from "../../assets/images/images.index";
 import BaseButton from "../../components/buttons/BaseButton";
+import OurStoryFragment from "../../fragments/index-template/OurStoryFragment";
+import FAQFragment from "../../fragments/index-template/FAQFragment";
+import GuestMobileNavigationChunk from "./GuestMobileNavigationChunk";
 
-function useGuestNavigationChunk() {
+export function useGuestNavigationChunk() {
   const [activeNavigationId, setActiveNavigationId] = useState<string | null>(
     null
   );
+  const [isActionViewOurStory, setIsActionViewOurStory] = useState(false);
+  const [isActionViewFAQ, setIsActionViewFAQ] = useState(false);
+  const [isActionOpenMobileMenu, setIsActionOpenMobileMenu] = useState(false);
+
+  function handleToggleIsActionViewOurStory() {
+    setIsActionViewOurStory(!isActionViewOurStory);
+  }
+
+  function handleToggleIsActionViewFAQ() {
+    setIsActionViewFAQ(!isActionViewFAQ);
+  }
+
+  function toggleActionOpenMobileMenu() {
+    setIsActionOpenMobileMenu(!isActionOpenMobileMenu);
+  }
+
   const navigationItems = [
     { id: "#our-story", name: "Our Story" },
     {
@@ -27,9 +47,9 @@ function useGuestNavigationChunk() {
       name: "About us",
       children: [
         {
-          id: "#about.users",
+          id: "#about.issues",
           icon: IC_Target,
-          name: "Targeted Users",
+          name: "Targeted Issues",
         },
         { id: "#about.benefits", icon: IC_Gift, name: "Benefits" },
         {
@@ -43,9 +63,9 @@ function useGuestNavigationChunk() {
       id: "#join",
       name: "Join us",
       children: [
-        { id: "#join.partner", icon: IC_Handshake, name: "As a partner" },
-        { id: "#join.community", icon: IC_Community, name: "Community" },
-        { id: "#join.volunteer", icon: IC_Volunteer, name: "Volunteer" },
+        { id: "#join", icon: IC_Handshake, name: "As a partner" },
+        { id: "#join", icon: IC_Community, name: "Community" },
+        { id: "#join", icon: IC_Volunteer, name: "Volunteer" },
       ],
     },
   ];
@@ -54,21 +74,39 @@ function useGuestNavigationChunk() {
   }
 
   function handleMouseOut() {
+    toggleActionOpenMobileMenu();
     setActiveNavigationId(null);
   }
   return {
-    navigation: navigationItems,
-    activeNavigationId,
-    handleMouseEnter,
     handleMouseOut,
+    isActionViewFAQ,
+    handleMouseEnter,
+    activeNavigationId,
+    isActionViewOurStory,
+    isActionOpenMobileMenu,
+    toggleActionOpenMobileMenu,
+    navigation: navigationItems,
+    handleToggleIsActionViewFAQ,
+    handleToggleIsActionViewOurStory,
   };
 }
 
 export default function GuestNavigationChunk() {
-  const { navigation, activeNavigationId, handleMouseEnter, handleMouseOut } =
-    useGuestNavigationChunk();
+  const {
+    navigation,
+    handleMouseOut,
+    isActionViewFAQ,
+    handleMouseEnter,
+    activeNavigationId,
+    isActionViewOurStory,
+    isActionOpenMobileMenu,
+    toggleActionOpenMobileMenu,
+    handleToggleIsActionViewFAQ,
+    handleToggleIsActionViewOurStory,
+  } = useGuestNavigationChunk();
+
   return (
-    <header className="bg-white drop-shadow-xl py-3 relative z-10">
+    <header className="bg-white drop-shadow-xl py-3 sticky top-0 z-10">
       <div className="w-11/12 max-w-screen-xl mx-auto flex items-center justify-between gap-10">
         <nav className="flex items-center flex-grow gap-20">
           <img src={IM_CompanyLogo} className="h-[30px]" />
@@ -82,6 +120,9 @@ export default function GuestNavigationChunk() {
                 onMouseEnter={() => item.children && handleMouseEnter(item.id)}
                 onBlur={() => item.children && handleMouseOut()}
                 onMouseLeave={() => item.children && handleMouseOut()}
+                onClick={() =>
+                  !item.children && handleToggleIsActionViewOurStory()
+                }
               >
                 {item.name}
                 {item.children && (
@@ -89,15 +130,16 @@ export default function GuestNavigationChunk() {
                 )}
                 {activeNavigationId === item.id && (
                   <ul className="absolute cursor-default top-full pt-5 shadow-xl bg-white min-w-[200px] px-5 rounded-lg z-50">
-                    {item.children?.map((child) => (
+                    {item.children?.map((child, i) => (
                       <li
-                        key={child.id}
+                        key={i}
                         className="border-b border-gray-100 text-xs font-medium text-gray-600 py-3"
                       >
                         <a
                           href={child.id}
                           className="flex items-center gap-4"
                           tabIndex={0}
+                          onClick={() => handleMouseOut()}
                         >
                           <img src={child.icon} className="w-[20px]" />
                           {child.name}
@@ -118,13 +160,36 @@ export default function GuestNavigationChunk() {
             <img src={IC_FontSizeDecrease} alt="" className="h-[30px]" />
           </div>
           <div className="hidden lg:block">
-            <BaseButton onClick={() => console.log("clIKEC")}>FAQ</BaseButton>
+            <BaseButton onClick={handleToggleIsActionViewFAQ}>FAQ</BaseButton>
           </div>
-          <div className="lg:hidden">
-            <img src={IC_Hamburger} className="w-[25px]" />
+          <div className="lg:hidden" onClick={toggleActionOpenMobileMenu}>
+            <img
+              src={isActionOpenMobileMenu ? IC_HamClose : IC_Hamburger}
+              className="w-[25px]"
+            />
           </div>
         </div>
       </div>
+      {isActionOpenMobileMenu && (
+        <GuestMobileNavigationChunk
+          {...{
+            activeNavigationId,
+            handleMouseEnter,
+            handleMouseOut,
+            handleToggleIsActionViewFAQ,
+            handleToggleIsActionViewOurStory,
+            isActionViewFAQ,
+            isActionViewOurStory,
+            navigation,
+            isActionOpenMobileMenu,
+            toggleActionOpenMobileMenu,
+          }}
+        />
+      )}
+      {isActionViewFAQ && <FAQFragment onClose={handleToggleIsActionViewFAQ} />}
+      {isActionViewOurStory && (
+        <OurStoryFragment onClose={handleToggleIsActionViewOurStory} />
+      )}
     </header>
   );
 }

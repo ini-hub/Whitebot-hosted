@@ -6,7 +6,7 @@ import HighlightedText from "../../components/typography/HighlightedText";
 
 export default function GoalsChunk() {
   return (
-    <section className="">
+    <section>
       <div className="max-w-screen-xl w-11/12 mx-auto py-24">
         <h1 className="text-3xl font-bold">
           Goals of <HighlightedText>Walk It</HighlightedText>{" "}

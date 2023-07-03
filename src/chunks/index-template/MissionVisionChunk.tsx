@@ -7,7 +7,7 @@ import HighlightedText from "../../components/typography/HighlightedText";
 
 export default function MissionVisionChunk() {
   return (
-    <section className="py-24 relative">
+    <section id="about.vision" className="py-24 relative">
       <img
         src={IM_BackgroundSkinTwo}
         className="w-full h-full object-cover absolute inset-0"

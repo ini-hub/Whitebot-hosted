@@ -3,7 +3,6 @@ import {
   IM_BackgroundSkin,
   IM_ImmobilityIllustration,
   IM_InsecurityIllustration,
-  IM_NCCLogo,
   IM_StigmatizationIllustration,
 } from "../../assets/images/images.index";
 import HighlightedText from "../../components/typography/HighlightedText";
@@ -41,7 +40,7 @@ export function useIssuesChunk() {
 export default function IssuesChunk() {
   const { targetedIssues } = useIssuesChunk();
   return (
-    <section className="relative bg-[#FCF9FF]">
+    <section id="about.issues" className="relative bg-[#FCF9FF]">
       <div
         className=" bg-app-yellow h-full w-full absolute -top-5"
         style={{

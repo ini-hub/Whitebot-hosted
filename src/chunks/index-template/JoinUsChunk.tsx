@@ -7,7 +7,7 @@ import BaseButton from "../../components/buttons/BaseButton";
 
 export default function JoinUsChunk() {
   return (
-    <section className="bg-black py-20 text-white">
+    <section id="join" className="bg-black py-20 text-white">
       <div className="max-w-screen-xl mx-auto w-11/12">
         <h2 className="text-2xl sm:text-3xl font-bold text-white text-center max-w-xl mx-auto md:leading-snug">
           <span className="text-app-yellow">Join us</span> in shaping the future

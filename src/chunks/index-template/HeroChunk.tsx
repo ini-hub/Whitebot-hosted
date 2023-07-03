@@ -23,9 +23,9 @@ export default function HeroChunk() {
   return (
     <section className="bg-[#FCF9FF] py-20">
       <div className="max-w-screen-xl w-11/12 mx-auto grid lg:grid-cols-2 gap-10">
-        <div className="lg:max-w-lg max-w-2xl">
+        <div className="lg:max-w-xl max-w-2xl">
           <h1
-            className="text-4xl font-bold leading-snug"
+            className="text-4xl sm:text-5xl font-bold leading-snug sm:leading-snug"
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
           >
             The future of{" "}
@@ -62,9 +62,9 @@ export default function HeroChunk() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative max-h-[500px]">
           <div
-            className={`bg-black bg-opacity-40 inset-0 m-auto absolute grid place-items-center rounded-xl z-10 transition-opacity duration-300 ${
+            className={`bg-black bg-opacity-40 inset-0 m-auto absolute grid place-items-center rounded-xl z-[1] transition-opacity duration-300 ${
               isActionPlayVideo ? "opacity-0 hover:opacity-100" : ""
             }`}
           >

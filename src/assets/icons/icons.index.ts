@@ -16,4 +16,6 @@ export { default as IC_Instagram } from "./ic_instagram.png";
 export { default as IC_Twitter } from "./ic_twitter.png";
 export { default as IC_Youtube } from "./ic_youTube.png";
 export { default as IC_ArrowUpCircle } from "./ic_arrow-up-circle.svg";
+export { default as IC_ChevronDownLight } from "./ic_chevron-down-light.svg";
+export { default as IC_HamClose } from "./ic_ham-close.svg";
 // export { default as } from './'
