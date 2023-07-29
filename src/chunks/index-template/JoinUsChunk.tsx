@@ -23,7 +23,9 @@ export default function JoinUsChunk() {
             <p className="text-sm text-gray-300 mb-4">
               Invest in our community
             </p>
+            <a href="https://wc43jyypl50.typeform.com/to/tfJHulbf">
             <BaseButton>Partner</BaseButton>
+            </a>
           </div>
 
           <div className="text-center mt-10 md:mt-20 border-y border-[#343434] md:border-0 py-16">
@@ -32,7 +34,9 @@ export default function JoinUsChunk() {
               <span className="font-bold">Volunteer</span> to our movement
             </h6>
             <p className="text-sm text-gray-300 mb-4">Make change happen</p>
+            <a href="https://wc43jyypl50.typeform.com/to/tfJHulbf">
             <BaseButton>Volunteer</BaseButton>
+            </a>
           </div>
 
           <div className="text-center">
@@ -43,7 +47,9 @@ export default function JoinUsChunk() {
             <p className="text-sm text-gray-300 mb-4">
               Share your expertise, values and ideas
             </p>
+            <a href="https://wc43jyypl50.typeform.com/to/tfJHulbf">
             <BaseButton>Join us</BaseButton>
+            </a>
           </div>
         </div>
       </div>

@@ -69,6 +69,11 @@ export function useGuestNavigationChunk() {
       ],
     },
   ];
+
+  const LearnMore = [
+    { id: "#our-story", name: "Our Story" },
+  ];
+
   function handleMouseEnter(id: string) {
     setActiveNavigationId(id);
   }

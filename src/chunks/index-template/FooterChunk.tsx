@@ -69,7 +69,7 @@ export default function FooterChunk() {
               >
                 FAQ
               </span>
-              <a href="" className="text-sm text-gray-500 block max-w-max">
+              <a href="https://wc43jyypl50.typeform.com/to/tfJHulbf" className="text-sm text-gray-500 block max-w-max">
                 Careers
               </a>
             </div>

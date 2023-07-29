@@ -1,5 +1,6 @@
 {
   "name": "walk-it",
+  "homepage": "https://walkmobility.com/",
   "type": "module",
   "version": "0.0.1",
   "scripts": {

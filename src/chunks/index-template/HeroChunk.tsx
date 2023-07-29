@@ -40,17 +40,22 @@ export default function HeroChunk() {
             for the visually impaired.
           </h1>
 
-          <p className="text-sm mt-5 mb-10">
+          <p className="text-m mt-5 mb-10">
             We are building a revolutionary device called{" "}
             <span className="text-app-purple font-semibold"> “White Bot” </span>{" "}
             designed to help visually impaired individuals navigate the world
-            around them with ease and confidence
+            around them with ease and confidence. At WalkIT we are currently seeking partnerships 
+            to foster our growth and development. If interested, Kindly apply below.
           </p>
 
-          <div className="flex lg:block items-center gap-8">
+          <div className="flex lg:block items-center gap-8 space-x-10">
             <BaseButton>Learn more</BaseButton>
+            
+            <a href="https://wc43jyypl50.typeform.com/to/tfJHulbf">
+            <BaseButton>Partner with us</BaseButton>
+            </a>
 
-            <div className="lg:mt-10">
+            {/* <div className="lg:mt-10">
               <h5 className="text-xs mb-1 text-gray-800 font-medium lg:block hidden">
                 Partners
               </h5>
@@ -58,7 +63,7 @@ export default function HeroChunk() {
                 <img src={IM_NCCLogo} className="h-[35px] lg:h-[50px]" />
                 <img src={IM_JonapLogo} className="h-[40px] lg:h-[50px]" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
