@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/src/pages/index.astro
+    - /bin/cp -R images $DEPLOYPATH
