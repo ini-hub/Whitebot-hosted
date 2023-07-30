@@ -1,6 +1,3 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/whitebot-hosted/dist/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp favicon.svg $DEPLOYPATH
