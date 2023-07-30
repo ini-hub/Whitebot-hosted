@@ -1,3 +1,6 @@
 ---
 deployment:
   tasks:
+    - export DEPLOYPATH=/home/walkyagb/public_html/
+    - /bin/cp dist/index.html $DEPLOYPATH
+    - /bin/cp dist/favicon.svg $DEPLOYPATH
