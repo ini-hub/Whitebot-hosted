@@ -16,7 +16,7 @@ export default function GoalsChunk() {
           <img
             src={IM_GoalsDesktopIllustration}
             alt=""
-            className="w-full hidden md:block h-[250px] object-left object-contain"
+            className="w-full hidden md:block h-[250px] object-center object-contain"
           />
           <img
             src={IM_GoalsMobileIllustration}
