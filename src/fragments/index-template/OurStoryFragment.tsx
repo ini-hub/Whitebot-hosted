@@ -36,8 +36,8 @@ export default function OurStoryFragment(props: OurStoryFragmentProps) {
           feedback and analysis carried out to improve the user experience.
         </p>
         <p className="text-sm my-4 leading-6">
-          In 2023, it was registered as a company named Walk IT Enterprise with
-          the Corporate Affairs Commission (CAC). Walk IT is in collaboration with Steriosh, the Joint
+          In 2023, it was registered as a company named WalkIT Enterprise with
+          the Corporate Affairs Commission (CAC). WalkIT is in collaboration with Steriosh, the Joint
           National Association of Persons with Disability (JONAPWD), and are still seeking partnership support.
         </p>
         <p className="text-sm my-4 leading-6">

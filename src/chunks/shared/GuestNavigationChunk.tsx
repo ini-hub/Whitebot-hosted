@@ -114,7 +114,7 @@ export default function GuestNavigationChunk() {
     <header className="bg-white drop-shadow-xl py-3 sticky top-0 z-10">
       <div className="w-11/12 max-w-screen-xl mx-auto flex items-center justify-between gap-10">
         <nav className="flex items-center flex-grow gap-20">
-          <img src={IM_CompanyLogo} className="h-[30px]" />
+          <img src={IM_CompanyLogo} alt="WalkIT | Walk Mobility Logo"className="h-[30px]" />
           <ul className="items-center gap-8 hidden lg:flex">
             {navigation.map((item, i) => (
               <li
@@ -159,10 +159,10 @@ export default function GuestNavigationChunk() {
         </nav>
         <div className="flex items-center gap-5 lg:gap-10">
           <div className="flex items-center gap-4">
-            <img src={IC_Translate} alt="" className="h-[24px]" />
-            <img src={IC_TextToSpeech} alt="" className="h-[24px]" />
-            <img src={IC_FontSizeIncrease} alt="" className="h-[45px]" />
-            <img src={IC_FontSizeDecrease} alt="" className="h-[30px]" />
+            <img src={IC_Translate} alt="Language Translator" className="h-[24px]" />
+            <img src={IC_TextToSpeech} alt="Text to Speech" className="h-[24px]" />
+            <img src={IC_FontSizeIncrease} alt="Font size increase" className="h-[45px]" />
+            <img src={IC_FontSizeDecrease} alt="Font size decrease" className="h-[30px]" />
           </div>
           <div className="hidden lg:block">
             <BaseButton onClick={handleToggleIsActionViewFAQ}>FAQ</BaseButton>
@@ -171,6 +171,7 @@ export default function GuestNavigationChunk() {
             <img
               src={isActionOpenMobileMenu ? IC_HamClose : IC_Hamburger}
               className="w-[25px]"
+              alt="Menu"
             />
           </div>
         </div>

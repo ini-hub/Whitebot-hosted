@@ -18,6 +18,7 @@ export default function WhiteBotChunk() {
 
           <div>
             <img
+            alt="WalkIT | Walk mobility White Bot connectivity"
               src={IM_WhiteBotConnectivityIllustration}
               className="h-[45px]"
             />
@@ -39,7 +40,7 @@ export default function WhiteBotChunk() {
               <li>Light and easy to operate</li>
             </ul>
           </div>
-          <img src={IM_ProductWhiteBot} className="w-full" />
+          <img src={IM_ProductWhiteBot} alt="WalkIT | Walk mobility White Bot" className="w-full" />
         </div>
       </div>
     </section>

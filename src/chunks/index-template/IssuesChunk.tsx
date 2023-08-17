@@ -54,6 +54,7 @@ export default function IssuesChunk() {
         }}
       >
         <img
+        alt="WalkIT | Walk Mobility Targeted Issues"
           src={IM_BackgroundSkin}
           className="absolute w-full h-full object-cover -z-[1]"
         />

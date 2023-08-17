@@ -8,10 +8,11 @@ export default function BenefitsChunk() {
     <div id="about.benefits" className="bg-[#FCF9FF] py-32">
       <div className="max-w-screen-xl mx-auto w-10/12">
         <h5 className="font-semibold text-xl mb-10">Benefits</h5>
-        <img src={IM_BenefitsIllustration} className="w-full hidden md:block" />
+        <img src={IM_BenefitsIllustration} className="w-full hidden md:block" alt="WalkIT | Walkmobility Benefit"/>
         <img
           src={IM_BenefitsMobileIllustration}
           className="w-full md:hidden max-w-[350px]"
+          alt="WalkIT | Walkmobility Benefit"
         />
       </div>
     </div>

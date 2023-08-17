@@ -30,11 +30,11 @@ export default function HeroChunk() {
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}
           >
             The future of{" "}
-            <span className="relative z-[1]">
+            <span className="relative z-[1] text-app-purple font-bold">
               automated{" "}
               <hr className="h-2 absolute bottom-2 left-0 bg-app-yellow border-none w-full z-[-1]" />
             </span>
-            <span className="relative z-[1]">
+            <span className="relative z-[1] text-app-purple font-bold">
               mobility
               <hr className="h-2 absolute bottom-2 left-0 bg-app-yellow border-none w-full z-[-1]" />
             </span>{" "}
@@ -62,9 +62,9 @@ export default function HeroChunk() {
               </h5>
               <div className="flex items-center">
                 
-                <img src={IM_NCCLogo} className="h-[35px] lg:h-[50px]" />
-                <img src={IM_JonapLogo} className="h-[40px] lg:h-[50px]" />
-                <img src={IM_Steriosh} className="h-[25px] lg:h-[35px]" />
+                <img src={IM_NCCLogo} className="h-[35px] lg:h-[50px]" alt="NCC logo" />
+                <img src={IM_JonapLogo} className="h-[40px] lg:h-[50px]" alt="JONAP logo"/>
+                <img src={IM_Steriosh} className="h-[25px] lg:h-[35px]" alt="Steriosh logo" />
               </div>
             </div>
           </div>
@@ -77,6 +77,7 @@ export default function HeroChunk() {
             }`}
           >
             <img
+            alt="WalkIT | Walk Mobility Video Pause"
               src={
                 !isActionPlayVideo
                   ? IC_Play
@@ -91,6 +92,7 @@ export default function HeroChunk() {
           {!isActionPlayVideo ? (
             <img
               src={IM_HeroVideoThumbnail}
+              alt="WalkIT | Walk mobility Video Thumbnail"
               className="w-full h-full object-cover rounded-xl"
             />
           ) : (

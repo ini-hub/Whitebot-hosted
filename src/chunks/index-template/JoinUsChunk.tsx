@@ -16,7 +16,7 @@ export default function JoinUsChunk() {
 
         <div className="grid md:grid-cols-3 gap-5 mt-10">
           <div className="text-center">
-            <img src={IM_PartnerIllustration} className="mx-auto" />
+            <img src={IM_PartnerIllustration} alt="WalkIT | Walk mobility Partner" className="mx-auto" />
             <h6 className="text-xl">
               <span className="font-bold">Partner</span> with us
             </h6>
@@ -29,7 +29,7 @@ export default function JoinUsChunk() {
           </div>
 
           <div className="text-center mt-10 md:mt-20 border-y border-[#343434] md:border-0 py-16">
-            <img src={IM_VolunteerIllustration} className="mx-auto" />
+            <img src={IM_VolunteerIllustration} alt="WalkIT | Walk mobility Volunteers" className="mx-auto" />
             <h6 className="text-xl">
               <span className="font-bold">Volunteer</span> to our movement
             </h6>
@@ -40,7 +40,7 @@ export default function JoinUsChunk() {
           </div>
 
           <div className="text-center">
-            <img src={IM_CommunityIllustration} className="mx-auto" />
+            <img src={IM_CommunityIllustration} alt="WalkIT | Walk mobility Community" className="mx-auto" />
             <h6 className="text-xl">
               <span className="font-bold">Join</span> our community
             </h6>

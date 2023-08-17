@@ -108,7 +108,7 @@ export default function FooterChunk() {
             <div className="flex items-center gap-2">
               {socialMediaLinks.map((link) => (
                 <a href={link.link} key={link.id}>
-                  <img src={link.icon} className="h-[30px]" />
+                  <img src={link.icon} className="h-[30px]" alt="WalkIT | Walk mobility Social"/>
                 </a>
               ))}
             </div>
@@ -124,7 +124,7 @@ export default function FooterChunk() {
                   className="block lg:hidden"
                   onClick={() => window.scrollTo(0, 0)}
                 >
-                  <img src={IC_ArrowUpCircle} className="h-[40px]" />
+                  <img src={IC_ArrowUpCircle} className="h-[40px]" alt="WalkIT | Walk mobilty Arrow up function"/>
                 </button>
               </div>
               <div className="grid gap-3 mt-5">
@@ -150,11 +150,11 @@ export default function FooterChunk() {
           className="hidden lg:block mx-auto"
           onClick={() => window.scrollTo(0, 0)}
         >
-          <img src={IC_ArrowUpCircle} className="h-[40px]" />
+          <img src={IC_ArrowUpCircle} className="h-[40px]" alt="WalkIT | Walk mobility arrow up function"/>
         </button>
         <div className="mt-4">
           <div className="flex items-start justify-between border-b py-5">
-            <img src={IM_CompanyLogo} />
+            <img src={IM_CompanyLogo} alt="WalkIT | Walk Mobility Company Logo" />
             <div className="hidden lg:block">
               <span> Follow us</span>
               <div className="flex items-center gap-2">
@@ -171,7 +171,7 @@ export default function FooterChunk() {
               <a className="text-xs">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
               <a className="text-xs">Terms of Services</a>
             </p>
-            <p className="text-xs">© 2023 Walk IT, all rights reserved</p>
+            <p className="text-xs">© 2023 WalkIT, all rights reserved</p>
           </div>
         </div>
       </div>
