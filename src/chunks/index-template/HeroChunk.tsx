@@ -49,7 +49,7 @@ export default function HeroChunk() {
             to foster our growth and development. If interested, Kindly apply below.
           </p>
 
-          <div className="flex lg:block items-center gap-8 text-xl space-x-10">
+          <div className="flex lg:block items-center gap-8 text-xl space-x-10 overflow-hidden lg:overflow-visible">
             {/* <BaseButton>Learn more</BaseButton> */}
             
             <a href="https://wc43jyypl50.typeform.com/to/tfJHulbf">

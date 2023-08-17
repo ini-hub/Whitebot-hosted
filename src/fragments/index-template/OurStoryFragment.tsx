@@ -37,15 +37,18 @@ export default function OurStoryFragment(props: OurStoryFragmentProps) {
         </p>
         <p className="text-sm my-4 leading-6">
           In 2023, it was registered as a company named Walk IT Enterprise with
-          the Corporate Affairs Commission (CAC) to legalize all activities
-          being carried out. We also entered into partnership with the Joint
-          National Association of Persons with Disability (JONAPWD).
+          the Corporate Affairs Commission (CAC). Walk IT is in collaboration with Steriosh, the Joint
+          National Association of Persons with Disability (JONAPWD), and are still seeking partnership support.
         </p>
         <p className="text-sm my-4 leading-6">
           Today, we are continually working on new and innovative ways to
           improve our products and services for our clients. Our team is
           passionate about what we do and are dedicated to delivering the best
           solutions to meet the needs of the visually impaired worldwide.
+        </p>
+
+        <p className="text-sm my-4 leading-6">
+          JOIN US IN MAKING THIS DREAM COME THROUGH!
         </p>
         <div className="flex justify-end">
           <BaseButton onClick={props.onClose}>Close</BaseButton>

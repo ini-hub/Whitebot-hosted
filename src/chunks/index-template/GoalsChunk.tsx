@@ -9,7 +9,7 @@ export default function GoalsChunk() {
     <section>
       <div className="max-w-screen-xl w-11/12 mx-auto py-24">
         <h1 className="text-3xl font-bold">
-          Goals of <HighlightedText>Walk It</HighlightedText>{" "}
+          Goals of <HighlightedText>Walk IT</HighlightedText>{" "}
         </h1>
 
         <div className="mt-10">
