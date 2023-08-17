@@ -12,8 +12,8 @@ import FAQFragment from "../../fragments/index-template/FAQFragment";
 
 function useFooterChunk() {
   const socialMediaLinks = [
-    { id: 1, icon: IC_Instagram, link: "https://instagram.com" },
-    { id: 2, icon: IC_Twitter, link: "https://twitter.com" },
+    { id: 1, icon: IC_Instagram, link: "https://instagram.com/be_inioluwa" },
+    { id: 2, icon: IC_Twitter, link: "https://twitter.com/etz_ini" },
     { id: 3, icon: IC_Youtube, link: "https://youtube.com" },
     { id: 4, icon: IC_Facebook, link: "https://facebook.com" },
   ];
@@ -96,10 +96,10 @@ export default function FooterChunk() {
               </a>
 
               <a
-                href="mailto:info.walkit@gmail.com"
+                href="mailto:excellent@walkmobility.com"
                 className="text-sm text-gray-500 block max-w-max"
               >
-                info.walkit@gmail.com
+                excellent@walkmobility.com
               </a>
             </div>
           </div>

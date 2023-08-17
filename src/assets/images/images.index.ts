@@ -21,3 +21,4 @@ export { default as IM_ProductWhiteBot } from "./im_product-whitebot.png";
 export { default as IM_WhiteBotConnectivityIllustration } from "./im_whitebot-connectivity-illustration.svg";
 export { default as IM_BenefitsIllustration } from "./im_benefits-illustration.svg";
 export { default as IM_BenefitsMobileIllustration } from "./im_benefits-mobile-illustration.svg";
+export { default as IM_Steriosh } from "./im_steriosh.png";

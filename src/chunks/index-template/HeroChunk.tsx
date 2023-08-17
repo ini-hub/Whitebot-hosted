@@ -5,6 +5,7 @@ import {
   IM_HeroVideoThumbnail,
   IM_JonapLogo,
   IM_NCCLogo,
+  IM_Steriosh
 } from "../../assets/images/images.index";
 import BaseButton from "../../components/buttons/BaseButton";
 
@@ -48,22 +49,24 @@ export default function HeroChunk() {
             to foster our growth and development. If interested, Kindly apply below.
           </p>
 
-          <div className="flex lg:block items-center gap-8 space-x-10">
-            <BaseButton>Learn more</BaseButton>
+          <div className="flex lg:block items-center gap-8 text-xl space-x-10">
+            {/* <BaseButton>Learn more</BaseButton> */}
             
             <a href="https://wc43jyypl50.typeform.com/to/tfJHulbf">
             <BaseButton>Partner with us</BaseButton>
             </a>
 
-            {/* <div className="lg:mt-10">
+            <div className="lg:mt-7">
               <h5 className="text-xs mb-1 text-gray-800 font-medium lg:block hidden">
-                Partners
+                In collaborations with;
               </h5>
               <div className="flex items-center">
+                
                 <img src={IM_NCCLogo} className="h-[35px] lg:h-[50px]" />
                 <img src={IM_JonapLogo} className="h-[40px] lg:h-[50px]" />
+                <img src={IM_Steriosh} className="h-[25px] lg:h-[35px]" />
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
 

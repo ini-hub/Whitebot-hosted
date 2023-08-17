@@ -62,11 +62,11 @@ export default function IssuesChunk() {
             <h2 className="text-3xl font-bold text-white">
               Issues we are <HighlightedText> targeting</HighlightedText>
             </h2>
-            <p className="text-sm text-white mt-5 leading-6">
+            <p className="text-m text-white mt-5 leading-6">
               Statistics have shown that 30% of the world population are
-              visually impaired. Nigerians take 2% of this fraction making it
-              about 4 million people which translates to the fact that 1 to 53
-              people in Nigeria are visually impaired and the following are the
+              visually impaired. <span className="font-bold">Nigerians</span> take <span className="font-bold">2%</span> of this fraction making it
+              about <span className="font-bold">4 million</span> people which translates to the fact that <span className="font-bold">1 to 53
+              people in Nigeria are visually impaired</span> and the following are the
               common issues we are targeting
             </p>
           </div>
