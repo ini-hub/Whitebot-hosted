@@ -98,7 +98,7 @@ export default function HeroChunk() {
           ) : (
             <video
               src={
-                "https://res.cloudinary.com/devtenotea/video/upload/v1688388925/a9ffwyahqqtk83grjchn.mp4"
+                "src/assets/images/Walkit new video copy.mov"
               }
               className="w-full h-full object-cover rounded-xl"
               autoPlay={isActionPlayVideo}
